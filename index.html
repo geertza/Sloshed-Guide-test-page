@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/style.css">
+    <script defer type="text/javascript" src='http://code.jquery.com/jquery-2.1.3.min.js' ></script>
+    <script defer type="text/javascript" src="./lib/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1> The Sloshed Guide</h1>
+    </div>
+    <div class="column container" id="brewApp">
+    
+        <input type="text" id="searchText">
+        <input type="submit" id="submit" ></input>
+    </div>
+    <div class="column container" id="weather">
+        <div class= "container row" id="currentWeather">
+            <div class="cityInfo"></div>
+            <h2>      </h2>
+            <img >      <img>
+            <div class="currentWeather"> </div>
+        </div>
+    </div>
+        <div class="container row" id="Gmap">
+
+        </div>
+
+    </div>
+    
+    
+</body>
+<style>
+     .header{
+        /* background-color: cadetblue; */
+        /* text-align: center; */
+        
+        width: 100vw;
+        height: 20vh;
+        position: absolute;
+        top: 0px;
+       
+    }
+     h1 {
+        font-size: 45px;
+        text-align: center;
+        background-color: cadetblue;
+    }
+        
+    
+    #brewApp{
+        width: 60vw;
+        height: 90vh;
+        background-color: aqua;
+        position: absolute;
+        left:0px;
+        top: 10vh;
+    }
+    #searchText{
+    width: 100%;
+    height: 20px;
+
+    }
+
+    #submit {
+        height: 20px;
+        width: 100%;
+    }
+    #weather{
+        width: 40vw;
+        height: 55vh;
+        background-color: burlywood;
+        position: absolute;
+        right: 0px;
+        top:10vh;
+    }
+
+    #currentWeather {
+        height: 55vh;
+        border-width: 3px;
+        padding: 10px;
+        border-color: black;
+        border-style: double;
+        
+    }
+    #Gmap  {
+        height: 35vh;
+        background-color: blue;
+        position: absolute;
+        bottom: 0px;
+        width: 40vw;
+        right: 0px;
+    }
+    
+    @media screen and (max-width: 800px){
+        #Gmap{
+            width: 100%;
+        }
+        #brewApp{
+           height:  55vh;
+           width: 80vw;
+        }
+        }
+        #weather{
+            width: 20vw;
+        }
+   
+   
+    
+</style>
+</html>
