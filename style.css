@@ -17,14 +17,14 @@ header {
     border-color: grey;
     border-image: initial;
     position: relative;
-    top:5vh
+    top:3vh
 }
 .flow-text{
     position: relative;
     font-size: 5vh;
     color: white;
     text-align: center;
-    top: 0vh;
+    top: -10vh;
     /* width: 100%; */
 }
 #row{
@@ -56,57 +56,34 @@ label{
     color: black;
 }
 
-
-#searchResults{
-    /* background-color: black; */
-    height: 500px;
-}
-
-.breweryResults{
-    /* background-color: black; */
-    height: 40%;
-}
-
-.breweryListItem{
-    padding: 1px;
-    color: gold;
-    font-family: 'Special Elite', cursive;
-}
-
-
-/* .currentWeather{
-    background-color: gold;
-    height: 40%;
-}
-
-.weatherConditions{
-    color: black;
-    font-family: 'Special Elite', cursive;
-}
     
 
+.breweryResults{
+   display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(20, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 30px;
+height: 40%;
+position: absolute;
+top:20vh;
+left:40vh;
+}
 
-#current-weather {
-    background-color: purple;
-    height: 400px;
-    width: 400 px;
 
-} */
+
 
 
 .grid {
-    
-        display: grid;
-       
     border-style: groove;
     border-color: silver;
      background-image: url(./images/barrel.jpg);
     background-repeat: round;
     background-size: 60%;
-    height: 20vh;
-    width: 40vw;
     position: relative;
-    left:40vw
+    height: 40vh;
+    width: 40vw;
+    
     /* creates scrollbar */
     overflow:auto;
     }
@@ -129,36 +106,35 @@ label{
     font-size: 1vw;
    
     }
-    
-    .name {
-        font-size: 1.5vw;
+   
+     .name {
+        font-size: 3vw;
         position: absolute;
-        left:3vw;
-        top:0vw;
+        top: 20%;
+        left:20%
         
+       }
+    
+    .website{
+        position: absolute;
+        left: 3%;
+        bottom: 19%;
+        font-size: 1.5vw;
+        color:black;
     }
     
-    .website {
+       .address  {
         position: absolute;
-        top: 0vw;
-        right: 0vw;
+        bottom: 3%;
+        right: 3%;
+        font-size: 1.5vw;
     }
-    .address{
+    .phone  {
         position: absolute;
-        bottom: 0vw;
-        right: 0vw;
+        bottom: 10%;
+        right: 3%; 
+        font-size: 1.5vw;
     }
-    .phone {
-        position: absolute;
-        bottom: 0vw;
-        left: 0vw;
-    }
-    .city {
-        position: absolute;
-        bottom: 2vw;
-        right: 0vw;
-    }
-
     body{
          /* background-color: black; */
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -195,5 +171,22 @@ label{
         z-index: -9;
         height: 100vh;
         width:100vw
+    }
+    .temperature{
+        height: 20vh;
+        width: 30vw;
+        
+        text-shadow: 0px 0px 10px rgba(255,255,255,0.6), 0px 0px 30px rgba(255,255,255,0.4), 0px 0px 50px rgba(255,255,255,0.3), 0px 0px 180px rgba(255,255,255,0.3);
+	color: rgba(255,255,255,0);
+    font: 80px 'ChunkFiveRegular';
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    }
+    
+    
+    .testbtn{
+        width: 100px;
+        height: 100px;
     }
       
