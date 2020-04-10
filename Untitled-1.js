@@ -41,7 +41,7 @@ zipBtn.addEventListener("keyup", function(event) {
         })}
         function searchZipWeather() {
     
-            let queryURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipInput + "&units=imperial&appid=db5176658b0dab6a2aa19e11a0e01748";
+            let queryURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + zipInput + "&units=imperial&appid=db5176658b0dab6a2aa19e11a0e01748";
             
         
             $.ajax({
@@ -107,7 +107,7 @@ zipBtn.addEventListener("keyup", function(event) {
            // Query to "get"  by name weather api data
         function searchCityWeather() {
     
-            let queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + nameInput + "&units=imperial&appid=db5176658b0dab6a2aa19e11a0e01748";
+            let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + nameInput + "&units=imperial&appid=db5176658b0dab6a2aa19e11a0e01748";
             
         
             $.ajax({
@@ -115,10 +115,7 @@ zipBtn.addEventListener("keyup", function(event) {
                 method: "GET"
             }).then(function(response) {
                 WeatherSearchResults = response
-
-              
-        
-              addbrew()
+                   addbrew()
             })};
 
 
