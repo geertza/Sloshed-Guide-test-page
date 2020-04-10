@@ -3,40 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./lib/index.css">
-    <script defer type="text/javascript" src='http://code.jquery.com/jquery-2.1.3.min.js' ></script>
-    <script defer type="text/javascript" src="./lib/index.js"></script>
-    <title>Document</title>
+
+    <title>The sloshed Guide</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"> -->
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="header">
-        <h1> The Sloshed Guide</h1>
-    </div>
-    <div class="column container" id="brewApp">
-    
-        <input type="text" id="searchText">
-        <input type="submit" id="submit" ></input>
-    </div>
-    <div class="column container" id="weather">
-        <div class= "container row" id="currentWeather">
-            <div class="cityInfo"></div>
-            <h2>      </h2>
-            <img >      <img>
-            <div class="currentWeather"> </div>
-        </div>
-    </div>
-        <div class="container row" id="Gmap">
-
-        </div>
+    <div class="city">
+ 
 
     </div>
+    <div class="sky" >
+       
+
+        </div>
+    </div>
+    <div class="container">
+
+         <header>
+            <div class="row" id="header">
+            <div class="header col s12 conatiner">
+                <span class="flow-text"> The Sloshed Guide</span>
+            </div>
     
+        </header>
+        
+        <div class="row">
+            <div class="col s3" id="searchBars">
+                <input id="searchInput1" type="text" value="">
+                <label >Please enter Brewery name</label>
+                <h5 class="searchBarOr">- OR - </h5>
+                <input id="searchInput2" type="text">
+                <label >Please enter Location</label>
+            </div>
+            
+            <div class="col s9" id="searchResults">
+                <div class="breweryResults">
+                    <ul id="breweryResultList">
+                       
+                    </ul>
+            </div>
+
+             <div class="currentWeather">
+                <p class="weatherConditions"></p>
+            </div>
+        </div>
+    </div>
     
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./Untitled-1.js"></script>    
 </body>
-
-     
-   
-   
-    
-
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="city"></div>
+    <div class="sky" ></div>
+    
+</body>
+<style>
+
+.city{
+    background-image: url(./images/city.png);
+        background-attachment: fixed;
+        /* background-size: cover; */
+       background-size: contain;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    /* background-size: 30%; */
+        position: absolute;
+        bottom: 0px;
+    
+    height: 100%;
+    width:100%
+
+}
+
+.sky{ background-image: url(./images/beerSun.jpg);
+        background-attachment: fixed;
+        /* background-size: cover; */
+       background-size: contain;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    /* background-size: 30%; */
+        position: absolute;
+        top: 0px;
+    z-index: -9;
+    height: 100%;
+    width:100%
+
+}
+</style>
+</html>
