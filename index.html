@@ -10,26 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"> -->
-    
-    
-    
-    
-    
-    
-    <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <div class="city" >
- 
-
-    </div>
-    <div class="sky" id="sky" >
-       
-
-        </div>
+    <div class="city" id="city" > </div>
+    <div class="sky" id="sky" ></div>
     </div>
          <header>
             <div class="row" id="header">
@@ -41,21 +26,12 @@
         
         <div class="row">
             <div class="col s3" id="searchBars">
-                <input id="searchInput1" type="text" value="billings">
-                <label >Please enter Brewery name</label>
+                <input id="searchInput1" type="text" value="Your sloshed city"  onfocus="this.value=''">
                 <h5 class="searchBarOr">- OR - </h5>
-                <input id="searchInput2" type="text">
-                <label >Please enter Location</label>
-            </div>
-            
-            <div  class="breweryResults ">
-                <!-- <div>
-                    <input type='button' class="testbtn" onclick="createweather()"></input>
-                </div> -->
-            </div>
-            <div class="weather">
-
-            </div>
+                <input id="searchInput2" type="text" value="Your sloshed Zip"  onfocus="this.value=''">
+                </div>
+            <div  class="breweryResults "></div>
+            <div class="weather"></div>
         </div>
     
     
@@ -66,6 +42,6 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./Untitled-1.js"></script>    
+<script src="./script.js"></script>    
 </body>
 </html>
